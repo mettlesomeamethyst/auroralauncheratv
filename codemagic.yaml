@@ -5,8 +5,6 @@ workflows:
     environment:
       vars:
         PACKAGE_NAME: "com.example.exoduswrapper"
-      android_signing:
-        - release_keystore
       java: 17
     scripts:
       - name: Set up Android SDK
