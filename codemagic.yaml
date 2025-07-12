@@ -7,11 +7,7 @@ workflows:
         PACKAGE_NAME: "com.example.exoduswrapper"
       java: 17
     scripts:
-      - name: Set up Android SDK
-        script: |
-          echo "y" | sdkmanager "platforms;android-33"
-          echo "y" | sdkmanager "build-tools;33.0.0"
-      - name: Build APK
+      - name: Build Debug APK
         script: |
           ./gradlew assembleDebug
     artifacts:
